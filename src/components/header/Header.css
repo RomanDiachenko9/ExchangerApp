@@ -17,4 +17,26 @@
     font-size: large;
 }
 
+.lang-btns {
+    width: auto;
+    position: relative;
+    text-align: right;
+    height: 1.5rem;
+    background-position: 90% 0;
+    color: #ffffff;
+    transition: background 0.8s;
+    border-radius: 5px;
+}
+
+.lang-btn {
+    border-radius: 5px;
+    background:
+            linear-gradient(-45deg, #7484C4, #576DC4, #7484C4);
+    background-size: 400%;
+    background-position: 90% 0;
+    color: #ffffff;
+    transition: background 0.8s;
+}
+
+
 

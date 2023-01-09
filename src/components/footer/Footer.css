@@ -1,44 +1,13 @@
-p {
-    color: #040509;
-}
 
 .contacts {
-    width: 220px;
-    background: linear-gradient(-45deg, #7484C4, #576DC4, #7484C4);
-    border-radius: 5%;
-    opacity: 70%;
-    font-size: 14px;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
+    background: #335;
+    width: 160px;
+    margin: 0 auto 20px;
+    display: grid;
+    grid-template-columns: 160px 80px;
+    border-radius: 45px;
 }
 
-.lang-btn {
-    align-items: flex-end;
-    margin: 0 auto 2px;
-    padding-left: 10px;
-    justify-content: right;
-    text-align: center;
-    height: 1.5rem;
-    border-radius: 0;
-    background:
-            linear-gradient(-45deg, #7484C4, #576DC4, #7484C4);
-    background-size: 400%;
-    background-position: 90% 0;
-    color: #ffffff;
-    transition: background 0.8s;
-}
-
-.app-lang-btn {
-    position: absolute;
-    bottom: 40px;
-    right: 40px;
-}
-
-.telegram {
-
-}
-
-.viber {
-
+.contactBlock {
+    margin-left: 10px;
 }

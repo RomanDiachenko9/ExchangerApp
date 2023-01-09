@@ -23,10 +23,11 @@ function App() {
 
 
     useEffect(() => {
-        axios.get('https://api.privatbank.ua/p24api/pubinfo?exchange&coursid=5')
+        axios.get('https://cors.eu.org/https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid')
             .then(response => {
                 const currenciesInArr = [];
                 const currenciesOutArr = [];
+
 
                 for (const data of response.data) {
                     currenciesInArr.push(data.ccy);
@@ -125,6 +126,7 @@ function App() {
                 onCcySelect={(value) => {
                     removeUAH(value, 'out');
                 }}
+                // onCcySelect={outRates}
                 selectedValue={selectedOutValue}
                 currencies={outRates}
                 onValueChange={(value) => calculate(value, 'out')}

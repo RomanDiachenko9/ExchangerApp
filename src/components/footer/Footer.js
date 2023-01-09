@@ -10,43 +10,26 @@ const Footer = () => {
 
     const { t } = useTranslation();
 
-    const handleLanguageChange = (language) => {
-        if (language === 'en') {
-            i18next.changeLanguage(language);
-        } else if (language === 'ua') {
-            i18next.changeLanguage(language);
-        }
-    };
 
     return (
-        <div className="footer">
+        <div>
             <hr/>
             <div className="contacts">
-            <p>{t('contact')}
-                <a className="telegram"
-                    href="https://t.me/romka_diachenko"
-                    target="_blank">
-                <img src={telegram}
-                     width="50"
-                     height="50"
-                     alt="Telegram"/></a>
-                <a className="viber"
-                   href="https://viber.com/"
+            <p className="contactBlock">{t('contact')}
+                <a href="https://t.me/romka_diachenko"
                    target="_blank">
-                <img src={viber}
-                     width="50"
-                     height="50"
-                     alt="Viber"/></a></p></div>
-            <div className="app-lang-btn">
-                 <button className="lang-btn"
-                    onClick={() => handleLanguageChange('en')}>
-                    {i18next.language === 'en' ? 'Eng' : 'Анг'}
-                 </button>
-                <button className="lang-btn"
-                        onClick={() => handleLanguageChange('ua')}>
-                    {i18next.language === 'ua' ? 'Укр' : 'Ua'}
-                </button>
-</div>
+                <img src={telegram}
+                     width="45"
+                     height="45"
+                     alt="Telegram"/></a>
+                {/*<a href="https://viber.com/"*/}
+                {/*   target="_blank">*/}
+                {/*<img src={viber}*/}
+                {/*     width="40"*/}
+                {/*     height="40"*/}
+                {/*     alt="Viber"/></a>*/}
+            </p>
+            </div>
         </div>
     )
 }
